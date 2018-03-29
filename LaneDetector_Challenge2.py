@@ -453,17 +453,17 @@ class LaneDetector(object):
         x_std_right_fitx = np.std( right_fitx )
 
 
-        print( x_std_left, x_std_right, x_std_left_fitx, x_std_right_fitx  )
+        #print( x_std_left, x_std_right, x_std_left_fitx, x_std_right_fitx  )
 
         if x_std_left > 50. or x_std_right > 50.:
             self.detected = False
 
-        plt.imshow(out_img)                
-        plt.plot(left_fitx, ploty, color='yellow')
-        plt.plot(right_fitx, ploty, color='yellow')
-        plt.xlim(0, 1280)
-        plt.ylim(720, 0)
-        plt.show()
+        #plt.imshow(out_img)                
+        #plt.plot(left_fitx, ploty, color='yellow')
+        #plt.plot(right_fitx, ploty, color='yellow')
+        #plt.xlim(0, 1280)
+        #plt.ylim(720, 0)
+        #plt.show()
 
 
         #

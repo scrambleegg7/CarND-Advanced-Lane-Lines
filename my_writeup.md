@@ -389,6 +389,10 @@ Apart from jupyter notebook, I have build another python program **LangeDetector
 then main program **Video.py** call LaneDetector class module.
 
 ```
+python Video.py --infile="project_video.mp4"
+```
+
+```
 def main():
 
     paramCls = ParametersClass()
@@ -427,5 +431,9 @@ We need to make another approach for making binary threshold image file for any 
 
 ## 3. To overcome Challange Video
 For challenge video, I have provided another program to have more credibilities indentifying lane line on the shade of the road image. Prrogran code is `LaneDetector-Challenge2.py`. The program I build for normal video, that only supports stable daylight contrast, thus it is easy to catch the lane line with binary image like sobel and colored threshold technique. The enhanced program separate yellow and white line from real image with color threshold technique and make warped binary image, so that program detect most condensed plot area representing the lane lines, and then save last 30 frames curve for making extended curved lane lines assuming the curvature of the lane should not have big delta. 
+
+```
+python Video_challenge.py --infile="challenge_video.mp4"
+```
 
 Here's a [link to my video result](./output_images/challenge_video.mp4)
